@@ -1,0 +1,45 @@
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(6, 195, 132); 
+    align-items: center;
+    padding: 10px 20px; 
+}
+.Navbar-logo {
+    font-size: 30px; 
+    font-weight: 900; 
+    color: #fff; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+.Navbar-logo a {
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.Navbar-logo a:hover {
+    color: rgba(253, 247, 247, 0.8); 
+}
+.Navbar-links ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar-links li {
+    color: #000; 
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+.link {
+    color: rgba(252, 251, 250, 0.684); 
+    text-decoration: none; 
+}
+
+.active {
+    color: red; 
+    font-weight: bolder; 
+}
