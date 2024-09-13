@@ -14,16 +14,16 @@ const Navbar = () => {
         <ul>
         
           <li>
-          <NavLink to="/categoria/Aguas" className="link" activeclassName="active">AGUAS</NavLink>
+          <NavLink to="/categoria/Aguas" className={({isActive}) =>(isActive?"link active": "link")} >AGUAS</NavLink>
             </li>
           <li>
-          <NavLink to="/categoria/Cervezas" className="link" activeclassName="active">CERVEZAS</NavLink>
+          <NavLink to="/categoria/Cervezas" className={({isActive}) =>(isActive?"link active": "link")} >CERVEZAS</NavLink>
             </li>
           <li>
-          <NavLink to="/categoria/Vinos" className="link" activeclassName="active">VINOS</NavLink>
+          <NavLink to="/categoria/Vinos" className={({isActive}) =>(isActive?"link active": "link")} >VINOS</NavLink>
             </li>
             <li>
-            <NavLink to="/categoria/Gaseosas" className="link" activeclassName="active">GASEOSAS</NavLink>
+            <NavLink to="/categoria/Gaseosas" className={({isActive}) =>(isActive?"link active": "link")} >GASEOSAS</NavLink>
             </li>
         </ul>
       </div>

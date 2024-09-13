@@ -9,9 +9,7 @@ import Error from './components/Error/Error';
 import CartProvider from './context/CartContext/CartProvider';
 import Cart from './components/Cart/Cart';
 import CheckOut from './components/CheckOut/CheckOut';
-
-import { db } from './main';
-import { getFirestore, collection,getDocs,query,where, QuerySnapshot } from 'firebase/firestore';
+import { getFirestore, collection,getDocs,query,where, } from 'firebase/firestore';
 
 
 const App = () => {
@@ -22,7 +20,7 @@ const App = () => {
     const q = query(collection(db,"productos"),  where("precio", "<", 100));
     getDocs(q).then((QuerySnapshot) =>{
       if(QuerySnapshot.size === 0){
-        console.log("no hay resultados");
+        
       }
       setProducts(
         QuerySnapshot.docs.map((doc) => ({id: doc.id, ...doc.data() }))
@@ -31,7 +29,7 @@ const App = () => {
     
   },[]);
 
-  console.log(products)
+  
 
 return (
     
